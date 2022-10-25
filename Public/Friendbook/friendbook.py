@@ -71,6 +71,7 @@ def database_add_friend(friend: Friend):
     Database command to add a new friend.
     """
     session.add(friend)
+    session.commit()
 
 
 def database_get_all_friends():
